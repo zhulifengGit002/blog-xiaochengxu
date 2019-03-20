@@ -1,0 +1,12 @@
+/* pages/topic/topic.wxss */
+.topic-list{
+  margin-top: 130rpx;
+}
+.zan-margin {
+  margin-right: 10rpx;
+  color: gray；;
+}
+.zan-margin-tag {
+  margin-right: 20rpx;
+  color: gray；;
+}

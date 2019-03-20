@@ -1,0 +1,30 @@
+<!--pages/detail/detail.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<import src="/dist/dialog/index.wxml" />
+<import src="/dist/toast/index.wxml" />
+<import src="/dist/loadmore/index.wxml" />
+<view class="feed-item" >
+  <view class="zan-font-16">
+      <text>{{post.title.rendered}}</text>
+    </view>
+  <view class="tag-body">
+      <view class="tag-actions">
+        <view class="icon-author">
+          <view class="zan-icon zan-icon-contact zan-pull-left zan-font-12 "> </view>
+          <view class="zan-pull-left zan-font-12 ">
+            竹雨
+          </view>
+        </view>
+        <view class="icon-created">
+          <view class="zan-icon zan-icon-clock zan-pull-left zan-font-12 "></view>
+          <view class="zan-pull-left zan-font-12">
+            <text>{{post.modified}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>
+ <!--文章主体-->
+<view class="wxParse" style='padding:20rpx 20rpx 200rpx 20rpx'>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+</view>

@@ -1,0 +1,7 @@
+/**app.wxss**/
+@import "dist/index.wxss";
+.container {
+  padding: 0;
+  background-color: #fff;
+  font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
+}
